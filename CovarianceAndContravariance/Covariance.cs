@@ -11,9 +11,32 @@
             Orange orange = new Orange();
             Apple apple = new Apple();
 
+
             fruit = apple;
+            fruit = orange;
+            PrintFruit(fruit);
+            PrintFruit(apple);
+            PrintFruit(orange);
+
+            PrintApple(orange);
+            PrintApple(fruit);
             orange = apple;
             apple = fruit; // it has error because we can't add less derived type to more derived type
+        }
+
+        private void PrintFruit(Fruit fruit)
+        {
+            Console.WriteLine($"Fruit => {fruit.GetType()}");
+        }
+
+        private void PrintOrange(Orange orange)
+        {
+            Console.WriteLine($"Orange => {orange.GetType()}");
+        }
+
+        private void PrintApple(Apple apple)
+        {
+            Console.WriteLine($"Apple => {apple.GetType()}");
         }
     }
 }
