@@ -3,11 +3,19 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.1.32414.318
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "c_00_delegates", "c_00_delegates", "{A2A55A82-78B0-4534-A17E-9EB4F0156AAB}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LearnDelegate_01", "src\c_00_delegates\LearnDelegate_01\LearnDelegate_01.csproj", "{1E6C6A2F-43D5-4A46-8FD2-174057AC519C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CovarianceAndContravariance", "CovarianceAndContravariance\CovarianceAndContravariance.csproj", "{91A7B52C-CBC5-4EBC-AF9B-009FCAAA1B49}"
 EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{91A7B52C-CBC5-4EBC-AF9B-009FCAAA1B49}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{91A7B52C-CBC5-4EBC-AF9B-009FCAAA1B49}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{91A7B52C-CBC5-4EBC-AF9B-009FCAAA1B49}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{91A7B52C-CBC5-4EBC-AF9B-009FCAAA1B49}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
