@@ -18,10 +18,11 @@
             PrintFruit(apple);
             PrintFruit(orange);
 
-            PrintApple(orange);
-            PrintApple(fruit);
-            orange = apple;
-            apple = fruit; // it has error because we can't add less derived type to more derived type
+            // ERROR : these have errors because we can't add less derived type to more derived type
+            //PrintApple(orange);
+            //PrintApple(fruit);
+            //orange = apple;
+            //apple = fruit; 
         }
 
         private void PrintFruit(Fruit fruit)

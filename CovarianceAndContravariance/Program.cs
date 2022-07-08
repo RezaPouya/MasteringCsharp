@@ -26,6 +26,7 @@ internal class Program
 
         IEnumerable<Apple> derivedApples = new List<Apple>();
         IEnumerable<Fruit> fruits = derivedApples;
-        // There is no need to use Cast<T>() like in   derivedAccounts.Cast<Account>()
+
+        
     }
 }
