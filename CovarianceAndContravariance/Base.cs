@@ -26,9 +26,6 @@ public class Base
     /// </summary>
     public string GetFruitName(Fruit fruit)
     {
-        if (fruit is Apple)
-            return nameof(Apple);
-
         if (fruit is Orange)
             return nameof(Orange);
 
@@ -47,5 +44,29 @@ public class Derived : Base
     public override Orange GetFruitVirtual()
     {
         return new Orange();
+    }
+}
+
+
+
+
+public class Test
+{
+    public void TestIt()
+    {
+
+        var baseClass = new Base();
+
+        var message = "is passed, the return type is ";
+
+        var f = $"Fruit  {baseClass.GetFruitName(new Fruit())}";
+        Console.WriteLine(f);
+
+        var o = $"Orange {message} {baseClass.GetFruitName(new Orange())}";
+        Console.WriteLine(o);
+
+        var a = $"Apple {message} {baseClass.GetFruitName(new Apple())}";
+        Console.WriteLine(a);
+
     }
 }
