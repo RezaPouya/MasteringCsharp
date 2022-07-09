@@ -8,7 +8,6 @@ namespace CovarianceAndContravariance;
 
 internal static class DelegateExample
 {
-
     public delegate TResult Func<in T, out TResult>(T arg);
 
     public delegate Fruit HandlerMethod();
@@ -23,7 +22,8 @@ internal static class DelegateExample
     
     public static void ContraVarianceTest()
     {
-        Action<Fruit> action1 = (target) => { Console.WriteLine(target.GetType().Name); };
+        Action<Fruit> action1 =
+            (target) => { Console.WriteLine(target.GetType().Name); };
         Action<Orange> action2 = action1;
         action2(new Orange());
     }

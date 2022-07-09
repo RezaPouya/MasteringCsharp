@@ -4,7 +4,8 @@ public interface IBasket<in T>
 {
     public void Add(T item);
 
-    // ERROR : Invalid variance: The type parameter 'T' must be covariantly valid on 'IBasket<T>.Return(T)'. 'T' is contravariant.
+    // ERROR : Invalid variance: The type parameter 'T'
+    // must be covariantly valid on 'IBasket<T>.Return(T)'. 'T' is contravariant.
     //public T Return(T item);
 }
 

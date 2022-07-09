@@ -4,7 +4,8 @@ public interface IDish<out T>
 {
     public T Get();
 
-    // ERROR:: Invalid variance: The type parameter 'T' must be contravariantly valid on 'IBasket<T>.Add(T)'. 'T' is covariant.
+    // ERROR:: Invalid variance: The type parameter 'T'
+    // must be contravariantly valid on 'IBasket<T>.Add(T)'. 'T' is covariant.
     //public void Cut(T item);
 }
 
