@@ -8,27 +8,18 @@ namespace CovarianceAndContravariance;
 
 public class Base
 {
-    public Fruit GetFruit()
-    {
-        return new Fruit();
-    }
+    public Fruit GetFruit() => new Fruit();
 
     /// <summary>
     /// this is about covariance  - covariance is about output parameter 
     /// </summary>
-    public virtual Fruit GetFruitVirtual()
-    {
-        return new Fruit();
-    }
+    public virtual Fruit GetFruitVirtual() => new Fruit();
 
     /// <summary>
     /// this is about contravariance - contravariance is about input parameter 
     /// </summary>
     public string GetFruitName(Fruit fruit)
     {
-        if (fruit is Apple)
-            return nameof(Apple);
-
         if (fruit is Orange)
             return nameof(Orange);
 
@@ -36,16 +27,30 @@ public class Base
     }
 }
 
-
 public class Derived : Base
 {
-    public Orange GetFruit()
-    {
-        return new Orange();
-    }
+    public Orange GetFruit() => new Orange();
 
-    public override Orange GetFruitVirtual()
+    public override Orange GetFruitVirtual() => new Orange();
+}
+
+
+
+public class Test
+{
+    public void TestIt()
     {
-        return new Orange();
+        var baseClass = new Base();
+
+        var message = "is passed, the return type is ";
+
+        var f = $"Fruit  {baseClass.GetFruitName(new Fruit())}";
+        Console.WriteLine(f);
+
+        var o = $"Orange {message} {baseClass.GetFruitName(new Orange())}";
+        Console.WriteLine(o);
+
+        var a = $"Apple {message} {baseClass.GetFruitName(new Apple())}";
+        Console.WriteLine(a);
     }
 }
