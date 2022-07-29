@@ -26,9 +26,9 @@ public static class Program
         //L_20_Stack.Run();
         //L_21_CallStack.Run();
         
-        L_22_StaticVariable.Run();
-        L_23_StaticData.Run();
-
+        //L_22_StaticVariable.Run();
+        //L_23_StaticData.Run();
+        L_24_StaticConstructor.Run();
         Console.ReadLine();
     }
      

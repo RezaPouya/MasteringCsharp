@@ -7,3 +7,4 @@ internal static class L_23_StaticData
 
     }
 }
+
