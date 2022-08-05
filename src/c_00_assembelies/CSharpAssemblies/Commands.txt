@@ -1,0 +1,16 @@
+﻿
+
+
+csc /target:library /out:CsharpAssembly1.dll
+
+>> compile mil source code 
+ilasm /DLL /OUT:MeILAssembly1.dll
+
+
+>> add refrence to csharp compiler 
+csc /r:MeILAssembly1.dll
+
+
+>> assembly to mil 
+ildasm /out:idlasm_example.txt CsharpAssembly1.dll
+
