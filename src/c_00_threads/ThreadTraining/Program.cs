@@ -2,17 +2,16 @@
 
 public class Program
 {
-
     private static void Main(string[] args)
     {
         //Run_Lesson_01();
         //Run_Lesson_02();
         //Run_Lesson_02();
-        //Run_Lesson_03();
-        //Run_Lesson_04();
-        Run_Lesson_05();
+        //L_03_SyncIssue.Run();
+        //L_04_LockExample.Run();
+        //L_05_WhatIsLock.Run();
+        L_05_DivideAnConcure.Run();
     }
-
 
     private static void Run_Lesson_00()
     {
@@ -26,26 +25,9 @@ public class Program
         lesson.Run();
     }
 
-
     private static void Run_Lesson_02()
     {
         L_02_BG_FG_Worker lesson = new L_02_BG_FG_Worker();
         lesson.Run();
-    }
-
-
-    private static void Run_Lesson_03()
-    {
-        L_03_SyncIssue.Run();
-    }
-
-    private static void Run_Lesson_04()
-    {
-        L_04_LockExample.Run();
-    }
-
-    private static void Run_Lesson_05()
-    {
-        L_05_WhatIsLock.Run();
     }
 }
